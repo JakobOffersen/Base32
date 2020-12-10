@@ -10,7 +10,7 @@ public struct Base32Encoder: StreamEncoder {
 	public typealias Partial = String
 	public typealias Encoded = String
 	
-	private static let EncodeLookup = ContiguousArray("0123456789ABCDEFGHJKMNPQRSTVWXYZ")
+    private static let EncodeLookup = ContiguousArray("23456789ABCDEFGHIJKMNPQRSTUVWXYZ")
 	
 	private var inputQueue = [UInt8]()
 	private var outputQueue = String()
